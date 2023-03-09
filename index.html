@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+        <div class="absolute1"></div>
+        <div class="absolute2"></div>
+        <div class="top">
+            <div class="title">
+                <p>Зарегистрируйся</p>
+                <p>за 1 минуту</p>
+            </div>
+            <div class="top_text">
+                <p>Всего <span class="text_gradient">2 шага</span> до коллабораций</p>
+                <p>со своими спутниками</p>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="phorm">
+                <input class="reg_input padding reg_input1" placeholder="Имя" type="text">
+                <button class="btn1">Shake it</button>
+                <input class="reg_input padding reg_input2" placeholder="Фамилия " type="text">
+                <button class="btn2">Shake it</button>
+                <input class="reg_input padding reg_input3" placeholder="Должность" type="text">
+                <button class="btn3">Shake it</button>
+                <input class="reg_input padding reg_input4" placeholder="Сфера деятельности" type="text">
+            </div>
+            <div class="btn padding">Продолжить</div>
+        </div>
+        <div class="bottom"><button>1/2</button></div>
+    </div>
+    <div class="moda1" >
+        <div class="middle middle_moda1">
+            <div class="nav">
+                <img src="back.svg" alt="">
+                <p class="nav_text">Выбери свою должность</p>
+                <div></div>
+            </div>
+            <div class="phorm"><input class="reg_input padding" placeholder="Имя" type="text"></div>
+            <div class="list">
+                <p class="list_element">Дизайнер</p>
+                <p class="list_element">Дизайнер</p>
+                <p class="list_element">Дизайнер</p>
+                <p class="list_element">Дизайнер</p>
+            </div>
+        </div>
+        <div class="bottom"><button>1/2</button></div>
+    </div>
+    <script>
+        const btn = document.querySelector('button'),
+        moda1 = document.querySelector('.moda1'),
+        content = document.querySelector('.content'),
+        Shake1 = document.querySelector('.reg_input1'),
+        Shake2 = document.querySelector('.reg_input2'),
+        Shake3 = document.querySelector('.reg_input3'),
+        ani1 = document.querySelector('.btn1'),
+        ani2 = document.querySelector('.btn2'),
+        ani3 = document.querySelector('.btn3')
+        function modal() {
+            moda1.classList.toggle('height')
+        }
+        function animation1() {
+            Shake1.classList.toggle('am1')
+        }
+        function animation2() {
+            Shake2.classList.toggle('am2')
+        }
+        function animation3() {
+            Shake3.classList.toggle('am3')
+        }
+        ani1.addEventListener('click', () => {
+            animation1()
+            console.log(123)
+        })
+        ani2.addEventListener('click', () => {
+            animation2()
+        })
+        ani3.addEventListener('click', () => {
+            animation3()
+        })
+        // btn.addEventListener('click', () => {
+        //     modal()
+        // })
+    </script>
+</body>
+</html>
